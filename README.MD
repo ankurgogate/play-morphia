@@ -55,7 +55,7 @@ public class MyMongoClientFactory extends MongoClientFactory {
 
     @Inject
     public MyMongoClientFactory(Config config) {
-        super(config);
+        super((Configuration) config);
         this.config = config;
     }
 
